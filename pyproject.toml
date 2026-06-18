@@ -1,0 +1,31 @@
+[project]
+name = "att-mbads"
+version = "0.1.0"
+description = "Advanced Tech Track - Polars for Data Analytics"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "polars>=1.0.0",
+    "pandas>=2.0.0",
+    "pyarrow>=14.0.0",
+    "plotly>=5.0.0",
+    "python-dotenv>=1.0.0",
+    "streamlit>=1.58.0",
+    "sqlalchemy>=2.0.50",
+    "ibm-db>=3.2.9",
+    "ibm-db-sa>=0.4.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "notebook>=7.0.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "notebook>=7.0.0",
+]
